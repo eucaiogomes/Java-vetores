@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class exer4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        double [] numeros = new double[10];
+        double soma_numeros =0;
+
+        for (int i =0;i<10;i++){
+
+            System.out.println("Infome o "+(i+1)+"° numero: ");
+            numeros[i]= sc.nextDouble();
+            soma_numeros+=numeros[i];
+
+        }
+        double media = soma_numeros/10;
+        System.out.println("Media = "+media);
+        sc.close();
+
+    }
+}
