@@ -1,0 +1,14 @@
+Scanner sc = new Scanner(System.in);
+        double [] notas = new double[3];
+        double soma_notas =0;
+
+        for (int i =0;i<3;i++){
+           System.out.println("Infome a nota "+(i+1)+": ");
+           notas[i]= sc.nextDouble();
+           soma_notas+=notas[i];
+
+       }
+       double media = soma_notas/3;
+       System.out.println("Media = "+media);
+       sc.close();
+    }
